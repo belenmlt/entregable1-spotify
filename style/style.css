@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+@font-face {
+    font-family: circular-book;
+    src: url(circular-book.woff);
+}
+
+@font-face {
+    font-family: circular-bold;
+    src: url(circular-bold.woff);
+}
+
+body {  
+    font-family: circular-bold, Helvetica, Arial, sans-serif;
+    /* margin: 1.5vw 10.5vw; */
+    /* background-color: #509BF5; */
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-areas:
+        "header header header header"
+        "get-premium get-premium get-premium get-premium"
+        "purple-student purple-student purple-student purple-student"
+        "why-premium why-premium why-premium why-premium"
+        "choose-yours choose-yours choose-yours choose-yours"
+        "copyright copyright copyright copyright" 
+}
+
+header {
+    height: 5.5vw;
+    width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    position: fixed;    
+    top: 0;
+    left: 0;
+    grid-area: header;
+    display: flex;
+}
+
+.logo-header {
+    width: 50%;
+    padding: 1vw 10.5vw;
+    display: flex;
+    align-items: center;
+} 
+
+.spotify-logo {
+    width: 9vw;
+    display: flex;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10.5vw;
+    font-size: 1.11vw;
+}
+
+.menu-list {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+}
+
+.menu-list > li {
+    padding: 1.94vw 1.18vw;
+}
+
+.menu-list > li:last-child {
+    padding-right: 0;
+}
+
+.white-border {
+    border-left: white solid 0.069vw;
+    padding: 0 1.2vw;
+    font-size: 0.7vw;
+}
+
+.blue-get-premium {
+    grid-area: get-premium;
+    background-color: #509BF5;
+    line-height: 7.5vw;
+    padding: 4.5vw 10.5vw 4vw 10.5vw;
+    color: white;
+}
+
+.text-type1 {
+    font-size: 5.6vw;
+}
+
+.text-type4 {
+    font-size: 2.3vw;
+    line-height: 5vw;
+}
+
+.not-bold {
+    font-family: circular-book, Helvetica, Arial, sans-serif;;
+}
+.blue-get-premium > button {
+    color: white;
+    letter-spacing: 0.1vw;
+    font-size: 0.97vw;
+    background-color: #1DB954;
+    border: 0;
+    border-radius: 34.72vw;
+    padding: 0.9vw 3.3vw;
+}
+.purple-student {
+    text-align: center;
+    color: white;
+    padding: 2vw 10.5vw;
+    grid-area: purple-student;
+    background-color: #A789BE;
+}
+
+.text-type2 {
+    font-size: 3.3vw;
+    line-height: 4.5vw;
+    letter-spacing: 0.1vw;
+}
+
+.text-type3 {
+    font-size: 1.5vw;
+    margin-top: 2.08vw;
+    letter-spacing: 0.1vw;
+}
+
+.purple-student > button {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.15vw;
+    font-size: 0.97vw;
+    background-color: white;
+    border: 0;
+    border-radius: 34.72vw;
+    padding: 1.1vw 3.1vw;
+    margin: 2.5vw 0;
+}
+
+.why-premium {
+    grid-area: why-premium;
+    background-color: white;
+    text-align: center;
+    padding: 5vw 14vw 8vw 14vw;
+}
+
+.text-type2 {
+    font-size: 3.3vw;
+    line-height: 4.5vw;
+}
+
+.premium-features {
+    display: flex;
+    justify-content: space-around  
+}
+
+.premium-pictures {
+    margin: 5vw 5.5vw 0vw 5.5vw;
+    width: 9.86vw;
+    height: 9.86vw;
+}
+
+.choose-yours {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "list-title list-title list-title list-title"
+        "perks-list perks-list perks-list perks-list"
+        "start-button start-button start-button start-button"
+        */
+    grid-area: choose-yours;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 4vw 10vw;   
+}
+
+.premium-plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vw 0 1vw 0;
+}
+
+.plans-all {
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 2vw;
+    border: none;
+    border-radius: 0.75vw;
+    padding: 1vw;
+    text-align: left;
+    box-shadow: grey 0 0 0.5vw;
+    margin: 0 0.6vw;
+    width: 22vw;  
+}
+
+.text-type5 {
+    font-size: 1.11vw;    
+}
+
+.list-title {
+    padding-bottom: 1.2vw;
+    padding-top: 0;
+    border-bottom: solid #DCDCDC 0.1vw;
+}
+
+.blue-button {
+    background-color: rgb(46, 119, 208);
+    color: white;
+    border-radius: 0.25vw;
+    border: none;
+    font-size: 1vw;
+    font-family: circular-bold, Helvetica, Arial, sans-serif;
+    padding: 0.25vw 0.5vw;
+}
+
+.perks-list {
+    list-style: none;
+    padding: 1.2vw 0 6vw 0;
+    height: 22vw;
+}
+
+.start-button {
+    background-color: #1DB954;
+    color: white;
+    border-radius: 34.72vw;
+    border: none;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    font-family: circular-bold, Helvetica, Arial, sans-serif;
+    padding: 1vw 6vw; 
+    margin-bottom: 1.8vw;
+    /* touch-action: manipulation;    
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    padding: 1.180vw 3.33vw;
+    position: relative; */
+}
+
+footer {
+    grid-area: copyright;
+    background-color: black;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: black;
+}
+
+.bottom {
+    color: gray;
+    font-family: circular-book, Helvetica, Arial, sans-serif;
+    font-size: 0.87vw;
+    padding: 2vw 10.5vw 1vw 10.5vw;
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    width: 50%;
+}
+
+.right-side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    line-height: 2vw;
+}
+
+.icon-es {
+    width: 1.8vw;
+}
+
+.not-responsive-links {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
+
