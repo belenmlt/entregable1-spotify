@@ -16,8 +16,6 @@
 
 body {  
     font-family: circular-bold, Helvetica, Arial, sans-serif;
-    /* margin: 1.5vw 10.5vw; */
-    /* background-color: #509BF5; */
 }
 
 
@@ -98,31 +96,6 @@ header {
     font-size: 5.6vw;
 }
 
-.text-type4 {
-    font-size: 2.3vw;
-    line-height: 5vw;
-}
-
-.not-bold {
-    font-family: circular-book, Helvetica, Arial, sans-serif;;
-}
-.blue-get-premium > button {
-    color: white;
-    letter-spacing: 0.1vw;
-    font-size: 0.97vw;
-    background-color: #1DB954;
-    border: 0;
-    border-radius: 34.72vw;
-    padding: 0.9vw 3.3vw;
-}
-.purple-student {
-    text-align: center;
-    color: white;
-    padding: 2vw 10.5vw;
-    grid-area: purple-student;
-    background-color: #A789BE;
-}
-
 .text-type2 {
     font-size: 3.3vw;
     line-height: 4.5vw;
@@ -135,11 +108,46 @@ header {
     letter-spacing: 0.1vw;
 }
 
+.text-type4 {
+    font-size: 2.3vw;
+    line-height: 5vw;
+}
+
+.text-type5 {
+    font-size: 1.11vw;    
+}
+
+.not-bold {
+    font-family: circular-book, Helvetica, Arial, sans-serif;;
+}
+.blue-get-premium > button {
+    color: white;
+    letter-spacing: 0.1vw;
+    font-size: 1vw;
+    background-color: #1DB954;
+    border: 0;
+    border-radius: 34.72vw;
+    padding: 0.9vw 3.3vw;
+}
+
+.blue-get-premium > button:hover {
+    background-color: #40cc71;
+    font-size: 1.02vw;
+}
+
+.purple-student {
+    text-align: center;
+    color: white;
+    padding: 2vw 10.5vw;
+    grid-area: purple-student;
+    background-color: #A789BE;
+}
+
 .purple-student > button {
     color: black;
     font-weight: bold;
     letter-spacing: 0.15vw;
-    font-size: 0.97vw;
+    font-size: 1vw;
     background-color: white;
     border: 0;
     border-radius: 34.72vw;
@@ -147,16 +155,15 @@ header {
     margin: 2.5vw 0;
 }
 
+.purple-student > button:hover {
+    font-size: 1.02vw;
+}
+
 .why-premium {
     grid-area: why-premium;
     background-color: white;
     text-align: center;
     padding: 5vw 14vw 8vw 14vw;
-}
-
-.text-type2 {
-    font-size: 3.3vw;
-    line-height: 4.5vw;
 }
 
 .premium-features {
@@ -204,10 +211,6 @@ header {
     width: 22vw;  
 }
 
-.text-type5 {
-    font-size: 1.11vw;    
-}
-
 .list-title {
     padding-bottom: 1.2vw;
     padding-top: 0;
@@ -240,14 +243,11 @@ header {
     font-family: circular-bold, Helvetica, Arial, sans-serif;
     padding: 1vw 6vw; 
     margin-bottom: 1.8vw;
-    /* touch-action: manipulation;    
-    transition-duration: 33ms;
-    transition-property: background-color, border-color, color, box-shadow, filter, transform;
-    user-select: none;
-    vertical-align: middle;
-    transform: translate3d(0px, 0px, 0px);
-    padding: 1.180vw 3.33vw;
-    position: relative; */
+}
+
+.start-button:hover {
+    background-color: #40cc71;
+    font-size: 1.02vw;
 }
 
 footer {
@@ -293,6 +293,5 @@ footer {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-
 }
 
