@@ -178,14 +178,6 @@ header {
 }
 
 .choose-yours {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-        "list-title list-title list-title list-title"
-        "perks-list perks-list perks-list perks-list"
-        "start-button start-button start-button start-button"
-        */
     grid-area: choose-yours;
     background-color: #f8f8f8;
     text-align: center;
